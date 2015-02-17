@@ -1,0 +1,14 @@
+$base-color: #0ba;
+$sub-color: #e64;
+$alt-color: #fff;
+
+$midgray: #777;
+$darkgray: #444;
+
+@import 
+  "resets",
+  "header",
+  "menu",
+  "footer",
+  "queries",
+  "bits";
