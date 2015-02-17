@@ -1,0 +1,91 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* [END] reset */
+
+/*defaults*/
+body{
+	overflow: hidden;
+}
+a, button{
+	outline: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+}
+/* [END] defaults*/
+
+/* pages */
+.page{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	-webkit-transform:translate3d(0, 0, 0);
+	   -moz-transform:translate3d(0, 0, 0);
+		-ms-transform:translate3d(0, 0, 0);
+		 -o-transform:translate3d(0, 0, 0);
+			transform:translate3d(0, 0, 0);
+}
+/* [END] pages */
+
+
+/* animations */
+.page.transition{
+	-webkit-transition-duration: .6s;
+	   -moz-transition-duration: .6s;
+		 -o-transition-duration: .6s;
+			transition-duration: .6s;
+	-webkit-animation-duration: .6s;
+	   -moz-animation-duration: .6s;
+         -o-animation-duration: .6s;
+            animation-duration: .6s;
+}
+.page.left{
+	-webkit-transform:translate3d(-100%, 0, 0);
+	   -moz-transform:translate3d(-100%, 0, 0);
+		-ms-transform:translate3d(-100%, 0, 0);
+		 -o-transform:translate3d(-100%, 0, 0);
+			transform:translate3d(-100%, 0, 0);
+}
+.page.center{
+	-webkit-transform:translate3d(0, 0, 0);
+	   -moz-transform:translate3d(0, 0, 0);
+		-ms-transform:translate3d(0, 0, 0);
+		 -o-transform:translate3d(0, 0, 0);
+			transform:translate3d(0, 0, 0);
+}
+.page.right{
+	-webkit-transform:translate3d(100%, 0, 0);
+	   -moz-transform:translate3d(100%, 0, 0);
+		-ms-transform:translate3d(100%, 0, 0);
+		 -o-transform:translate3d(100%, 0, 0);
+			transform:translate3d(100%, 0, 0);
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.page.fadeIn {
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+/* [END] animations */
