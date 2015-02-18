@@ -1,10 +1,27 @@
 /*******************************
        Global Resets
 *******************************/
+::-webkit-input-placeholder {
+   color: rgba($alt-color, 0.6);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba($alt-color, 0.6);  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba($alt-color, 0.6);  
+}
+
+:-ms-input-placeholder {  
+   color: rgba($alt-color, 0.6);  
+}
+
 body {
   background: $base-color;
   color: white;
   text-align: center;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 a {
@@ -100,6 +117,7 @@ h1 {
   box-sizing: border-box;
   font-size: 20px;
   text-align: left;
+  bottom: 0;
 }
 
 .menu-item:hover {
