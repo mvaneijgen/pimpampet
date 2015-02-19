@@ -1,35 +1,46 @@
 /* 
 ———————————————————————————————————— */
+* {
+	box-sizing: border-box;
+}
+.content {
+	margin: 0 20px;
+}
+input[type="text"],
 input[type="submit"],
 input[type="button"],
 button {
-border: 0;
-font-size: 18px;
-padding: 10px 20px;
-border-radius: 3px;
+	border: 0;
+	font-size: 18px;
+	padding: 10px 20px;
+	border-radius: 3px;
+	width: 100%;
+	margin-top: 10px;
 }
 button {
-background: $sub-color;
-font-size: 18px;
-color: $alt-color;
+	background: $sub-color;
+	font-size: 18px;
+	color: $alt-color;
 }
 input[type="text"] {
-border: 0;
-background: rgba( $alt-color, .3 );
-color: $alt-color;
-font-size: 16px;
-margin-top: 5px;
-padding: 10px 20px;
-border-radius: 3px;
+	background: rgba( $alt-color, .3 );
+	color: $alt-color;
+	font-size: 16px;
 }
+input[type="button"] {
+background: rgba($alt-color, .5);
+color: $alt-color;
+}
+
 .content h2 {
-font-size: 50px;
-font-weight: 700;
+	font-size: 50px;
+	font-weight: 700;
 }
 .content h2 span {
-font-weight: 400;
-font-size: 70px;
+	font-weight: 400;
+	font-size: 70px;
 }
+
 
 /* END 
 ———————————————————————————————————— */

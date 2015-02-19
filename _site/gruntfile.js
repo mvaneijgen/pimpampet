@@ -18,18 +18,12 @@ module.exports = function(grunt) {
     sass: {
       global: {
         options: {
-          style: "compressed"
+          style: "compressed",
+          sourcemap: true
         },
         files: {
-          "css/main-unprefixed.css": "_sass/main.scss"
+          "css/main.css": "_sass/main.scss"
         }
-      }
-    },
-
-    autoprefixer: {
-      global: {
-        src: "css/main-unprefixed.css",
-        dest: "css/main.css"
       }
     },
 
@@ -56,7 +50,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ["_sass/*.scss"],
-        tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
+        tasks: ["sass", "shell:jekyllBuild"]
       }
 
     }
@@ -66,6 +60,6 @@ module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
 
   grunt.registerTask("serve", ["shell:jekyllServe"]);
-  grunt.registerTask("default", ["sass", "autoprefixer", "shell:jekyllBuild", "watch"]);
+  grunt.registerTask("default", ["sass", "shell:jekyllBuild", "watch"]);
 
 };
