@@ -28,8 +28,8 @@ input[type="text"] {
 	font-size: 16px;
 }
 input[type="button"] {
-background: rgba($alt-color, .5);
-color: $alt-color;
+	background: rgba($alt-color, .5);
+	color: $alt-color;
 }
 
 .content h2 {
@@ -39,6 +39,14 @@ color: $alt-color;
 .content h2 span {
 	font-weight: 400;
 	font-size: 70px;
+}
+
+.content h1 {
+	font-size: 4em;
+	font-weight: 700;
+	margin: 50px 0;
+	color: $sub-color;
+  	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 
